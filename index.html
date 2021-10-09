@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/script/app.js" defer></script>
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="shortcut icon" href="https://img.icons8.com/material/24/fa314a/matt-paper.png" type="image/x-icon">
+    <title>TodoList</title>
+</head>
+<body> 
+    <header>
+        <h1 class="texto-inicial">Todo List</h1>
+    </header>
+    <main>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>fecha</th>
+                    <th> Descripcion de tarea</th>
+                    <th>Opciones de tarea</th>
+                </tr>
+                <tr  >
+                    <td class="fecha"><input id="date"type="date" min="2021/10/09" ></td>
+                    <td class="description"><input id="tarea"type="text" placeholder="describe tu tarea"></td>
+                    <td class="settings">
+                        <!-- aqui agregaremos botones de editar y eliminar para cada fila -->
+                        <button id="agregarTarea" type="button" >Agregar</button>
+                        
+                    </td>
+                </tr>
+            </thead> 
+            <tbody >
+                <!-- aqui se va agregar de manera dinamica la informacion -->
+                
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
